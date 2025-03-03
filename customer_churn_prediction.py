@@ -23,7 +23,7 @@ from tensorflow import keras
 
 
 
-df=pd.read_csv('/content/drive/MyDrive/data/tutrial_tensorflow/Customer churn prediction/Telco-Customer-Churn.csv')
+df=pd.read_csv('path.csv')
 df.sample(5)  #Display four randomly selected rows
 
 df.drop('customerID',axis=1,inplace=True) #customerID is not useful
