@@ -151,9 +151,11 @@ def my_model():
         keras.layers.Dense(1, activation='sigmoid')  # Output layer for binary classification
     ])
     model.compile(
-        optimizer='adam',
-        loss=keras.losses.BinaryCrossentropy(),
-        metrics=['accuracy']  # Add other metrics as needed
+      optimizer='adam',
+      loss=keras.losses.BinaryCrossentropy,
+      metrics=['accuracy','precision','recall','f1_score']
+  )
+  return model
     )
     return model
 
