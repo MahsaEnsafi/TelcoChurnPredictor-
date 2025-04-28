@@ -156,8 +156,6 @@ def my_model():
       metrics=['accuracy','precision','recall','f1_score']
   )
   return model
-    )
-    return model
 
 # Function to evaluate the model
 def eval(model, X, Y):
